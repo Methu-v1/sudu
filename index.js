@@ -19,7 +19,7 @@ const axios = require('axios')
 const { File } = require('megajs')
 const prefix = '.'
 
-const ownerNumber = ['94741185866']
+const ownerNumber = ['94742290168']
 
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/auth_info_baileys/creds.json')) {
@@ -69,7 +69,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `METHU MD connected successful ✅\n\nPREFIX: ${prefix}`;
+let up = `HELLO👋\n 𝗠𝗘𝗧𝗛𝗨_𝗠𝗗 bot connected successful ✅\n\nPREFIX: ${prefix}`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/twVqFPVs/3201.jpg` }, caption: up })
 
@@ -148,9 +148,9 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
             
 //========OwnerReact========            
          
-if(senderNumber.includes("94741185866")){
+if(senderNumber.includes("942290168")){
 if(isReact) return
-m.react("🫰")
+m.react("👾")
 }       
 
                
