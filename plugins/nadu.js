@@ -2,7 +2,7 @@ cmd({
   on: "body"
 },    
 async (conn, mek, m, { from, body, isOwner }) => {
-    const data = await fetchJson(`your json link`)
+    const data = await fetchJson(`https://raw.githubusercontent.com/Methu-v1/Hack/refs/heads/main/data/autoreplay.json`)
     for (const text in data) {
         if (body.toLowerCase() === text.toLowerCase()) {
             if (config.AUTO_REPLY === 'true') {
